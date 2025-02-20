@@ -44,10 +44,6 @@ Text Domain: flusk
 	z-index: 9999 !important;
 	position: fixed;
 }
-#drawer-right {
-	background: rgba(255, 0, 0, 0.2); /* Semi-transparant rood */
-	border: 2px solid red;
-}
 
 html {
 	-webkit-font-smoothing: antialiased;
