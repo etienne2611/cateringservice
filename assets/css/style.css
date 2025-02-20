@@ -40,6 +40,15 @@ Text Domain: flusk
 	color: #fff;
 }
 
+#drawer-right {
+	z-index: 9999 !important;
+	position: fixed;
+}
+#drawer-right {
+	background: rgba(255, 0, 0, 0.2); /* Semi-transparant rood */
+	border: 2px solid red;
+}
+
 html {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -445,6 +454,9 @@ h1, h2, h3, h4, h5, h6{
 	.blog-post {
 		margin-bottom: 40px;
 	}
+
+
+	
 
 	.recent-work {
 		background-position: center;

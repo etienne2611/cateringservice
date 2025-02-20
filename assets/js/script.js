@@ -27,7 +27,25 @@
 })(jQuery,'smartresize');
 
 
+document.querySelectorAll('.toggleDrawer').forEach(button => {
+    button.addEventListener("click", function(e) {
+        console.log("Drawer knop geklikt!"); // Controleer of dit wordt uitgevoerd
+    });
+});
 
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        console.log("Klik op link:", this.href);
+    });
+});
+
+document.querySelectorAll(".nav a").forEach(link => {
+    link.addEventListener("click", function() {
+        setTimeout(() => {
+            document.getElementById("drawer-right").classList.remove("open"); // Pas ID aan indien nodig
+        }, 300);
+    });
+});
 
 
 
@@ -114,12 +132,10 @@
 
 	//Set Down Arrow Button
 	jQuery('#scrollToContent').click(function(e){
-		e.preventDefault();
 		jQuery.scrollTo("#portfolio", 1000, { offset:-(jQuery('#header .top').height()), axis:'y' });
 	});
 
 	jQuery('nav > ul > li > a').click(function(e){
-		e.preventDefault();
 		jQuery.scrollTo(jQuery(this).attr('href'), 400, { offset:-(jQuery('#header .top').height()), axis:'y' });
 	})
 
